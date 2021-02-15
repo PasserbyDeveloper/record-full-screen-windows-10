@@ -1,10 +1,12 @@
-# Recording full screen in Windows 10
+# Fullscreen Recording in Windows 10
 
-Record your multi-monitor screen and save it into a video file in Windows 10.
+Record your monitors screen and save it into a video file in Windows 10.
 
-Output file format is a 30fps `mp4` (very high quality).
+Output file format is a `mp4` of very high quality at 30 fps.
 
-Output filename is the current date time.
+Output filename is the current date time appended with `.mp4`.
+
+Output is written at the current working directory (cwd) where the script was executed.
 
 ffmpeg uses the [gdigrab](https://ffmpeg.org/ffmpeg-devices.html#gdigrab), a Win32 GDI-based screen capture device.
 
